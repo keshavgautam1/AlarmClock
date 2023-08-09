@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'orbitron', sans-serif;
+  }
+  
+  section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: aliceblue;
+  }
+
+ 
+
+
+section .container{
+    display: flex;
+    flex-direction: column; /* Change flex-direction to arrange items vertically */
+    align-items: center;
+    justify-content: center;
+    height:330px;
+    max-width: 560px;
+    width:100%;
+    background-color: #154950;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    border-radius: 8%;
+    position: absolute;
+
+}
+
+
+
+section .container .time{
+    display: flex;
+    align-items: center;
+
+}
+
+.container .time .time-colon{
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+
+
+.time .time-colon .time-text{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    background: #d67e81;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+
+}
+
+.time .time-colon .time-text,
+.time .time-colon .colon{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.time .time-colon .colon{
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+.time .time-colon .colon .am_pm{
+    position: absolute;
+    top:0;
+    right: -50px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.time .time-colon .time-text .text{
+    font-size: 12px;
+    font-weight: 700;
+}  
+  
+
+
+
+
+.alarm {
+    display: flex; /* Add this to make the elements inside .alarm appear horizontally */
+    align-items: center; /* Adjust alignment as needed */
+    justify-content: space-evenly; /* Adjust alignment as needed */
+    border-radius: 8px;
+    margin-bottom: -60px;
+    margin-top: -30px; /* Adjust margin-top as needed */
+    position: relative;
+  }
+
+  .column {
+    margin-right: 10px;
+  }
+
+hr{
+    border: 1px solid #2E94E3;
+    margin: 20px auto;
+}
+
+.setAlarm{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.column select{
+    background: #10101E;
+    color: #fff;
+    text-align: center;
+    padding: 8px 4px;
+    border: 1px solid #2E94E3;
+    border-radius: 18px;
+}
+
+
+#btn-setAlarm, .btn-delete, #stopAlarm{
+    padding: 5px;
+    color: #fff;
+    background: #be26b2;
+    border: 1px solid #b73e26;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+
+}
+#btn-setAlarm:active, .btn-delete:active, #stopAlarm:active {
+    background-color: #ed5d2d;
+    transform: scale(0.95); 
+ }
+#stopAlarm{
+    /* visibility: hidden; */
+    width: 80px;
+    margin: 0 34%;
+    margin-left: 640px;
+    margin-top: 10px;
+}
+
+.btn-delete{
+    margin-left: 50px;
+}
+
+#btn-setAlarm:hover, .btn-delete:hover, #stopAlarm:hover{
+    cursor: pointer;
+    background: #eab830;
+    box-shadow: 0 0 30px #ed5d2d;
+}
+
+#alarm-h3{
+    color: rgb(127, 185, 217);
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 17px;
+}
+
+.alarmList {
+    height: 150px; /* Adjust the height as per your preference */
+    overflow-y: auto;
+    color: rgb(177, 214, 120);
+    margin: 14px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.alarmLog{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px auto;
+}
+
+.am_pm{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 7px;
+}

@@ -12,8 +12,8 @@ The Alarm Clock App is a user-friendly application that functions as both a digi
 ## Getting Started
 
 1. Clone the repository: `git clone https://github.com/keshavgautam1/alarm-clock-app.git`
-2. Navigate to the project directory: `cd alarm-clock-app`
-3. Open the `index.html` file in a web browser to start using the Alarm Clock App.
+2. Navigate to the project directory: `cd alarmClock-app`
+3. Open the `alarmClock.html` file in a web browser to start using the Alarm Clock App.
 
 ## Usage
 

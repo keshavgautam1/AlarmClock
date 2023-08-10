@@ -6,7 +6,7 @@ The Alarm Clock App is a user-friendly application that functions as both a digi
 
 - Real-time digital clock display.
 - Set multiple alarms with customizable labels and times.
-- Edit and delete existing alarms.
+- Delete existing alarms.
 - Receive visual and auditory notifications when alarms go off.
 
 ## Getting Started
